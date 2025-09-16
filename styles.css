@@ -123,7 +123,7 @@ main {
 .jackpots-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  background: rgba(242, 242, 242, 0.749);
+  background: #f9fafc;
   padding: 3rem 7rem;
   z-index: 1;
 }
@@ -271,6 +271,128 @@ main {
 .widget img {
   margin-left: 7rem;
 }
+.plan-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3.5rem;
+}
+.plan-section :where(h3, p) {
+  margin-bottom: 1.5rem;
+}
+.policy {
+  text-align: center;
+}
+.policy > span {
+  background: #36cda4;
+  color: #ffffff;
+  padding: 0.3rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  margin-left: 8.5rem;
+}
+
+.plan-section h3 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #0f2137;
+}
+.plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 0.5rem;
+  font-weight: 500;
+  z-index: 0;
+}
+.plan span:nth-child(1) {
+  background-color: #f7f8fb;
+  border-radius: 4px;
+  padding: 1rem;
+  box-shadow: 3px 3px 3px rgb(38, 78, 118, 10%);
+  z-index: 10;
+}
+.Free-Premium {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 3rem;
+  gap: 3rem;
+}
+.Free-Premium > div {
+  padding: 1rem 2rem 3rem;
+  background-color: #ffffff;
+}
+.Free-Premium h4 {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.Free-Premium ul {
+  max-width: 20rem;
+  padding: 0;
+}
+.Free-Premium ul li {
+  position: relative;
+  padding-left: 2rem;
+  margin: 0.5rem 0;
+}
+.Free-Premium ul li::before {
+  content: url(assets/checked.png);
+  position: absolute;
+  left: 0;
+  top: 0.3rem;
+}
+.Premium-head {
+  display: flex;
+  justify-content: space-between;
+}
+.recommended {
+  background-color: #ef9e48;
+  font-weight: bold;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  color: #ffffff;
+  padding: 0.5rem;
+}
+.Premium-price p > span {
+  color: #28dcb2;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.Free-Premium-btn {
+  background: #fcf2e8;
+  padding: 0.5rem 1.5rem;
+  color: #ef9e48;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.Free-Premium-btn:hover {
+  background: #f9e0c8f2;
+}
+.Premium {
+  border-radius: 10px;
+  border: solid 2px #28dcb2;
+}
+.Free {
+  border: solid 1px #80808027;
+  border-radius: 10px;
+}
+.Free > span {
+  visibility: hidden;
+}
+.Free-Premium-head {
+  margin-top: 1rem;
+}
 /******Responsive Design****/
 @media screen and (max-width: 1024px) {
   main {
@@ -370,5 +492,15 @@ main {
   }
   .widget img {
     margin-left: 0;
+  }
+  .Free-Premium {
+    display: block;
+  }
+  .Free {
+    margin-bottom: 2rem;
+  }
+  .policy {
+    text-align: center;
+    padding: 1rem;
   }
 }

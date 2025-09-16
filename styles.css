@@ -276,7 +276,8 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 3.5rem;
+  padding: 3.5rem;
+  background: #ffffff;
 }
 .plan-section :where(h3, p) {
   margin-bottom: 1.5rem;
@@ -393,6 +394,93 @@ main {
 .Free-Premium-head {
   margin-top: 1rem;
 }
+.Question-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 3.5rem;
+}
+.Question-section h3 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #0f2137;
+}
+.Questions {
+  margin-top: 2rem;
+  max-width: 47.5rem;
+}
+
+details > p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.5rem;
+}
+details {
+  margin-top: 1.5rem;
+}
+hr {
+  border: none;
+  height: 1px;
+  background: #e5ecf4;
+  margin: 1.5rem 0;
+}
+summary {
+  font-size: 1.125rem;
+  font-weight: 500;
+  position: relative;
+  padding-left: 2rem;
+}
+summary::before {
+  content: url(assets/plus-button.png);
+  margin-right: 0.5rem;
+  position: absolute;
+  left: 0;
+}
+footer {
+  padding: 3rem;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  margin: 0 7rem;
+}
+.container h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.125rem;
+}
+.container p {
+  line-height: 1.7rem;
+}
+.container ~ hr {
+  margin: 2rem 7rem;
+}
+.copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 7rem;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo > p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #0f2137;
+}
+.footer-items span {
+  font-weight: 500;
+}
 /******Responsive Design****/
 @media screen and (max-width: 1024px) {
   main {
@@ -406,6 +494,12 @@ main {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
     gap: 3rem;
     margin-top: 4rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-content: center;
   }
 }
 
@@ -448,26 +542,7 @@ main {
   .navMenu {
     display: none;
   }
-  /********
-  .navMenu {
-    position: absolute;
-    width: 100%;
-    background: transparent;
-    backdrop-filter: blur(15px);
-    height: 100vh;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: width 0.5s linear;
-  }
-  .navMenu ul {
-    display: flex;
-    flex-direction: column;
-  }
-  .navMenu ul li {
-    margin: 2rem 0;
-  }*****/
+
   .jackpots-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -502,5 +577,12 @@ main {
   .policy {
     text-align: center;
     padding: 1rem;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-content: center;
   }
 }

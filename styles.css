@@ -42,6 +42,7 @@ header {
   color: #28ddb2;
   font-weight: 500;
 }
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -264,12 +265,12 @@ main {
 }
 .widget-section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   background: rgb(255, 247, 245);
   padding: 3rem 0;
 }
 .widget img {
-  margin-left: 7rem;
+  margin-left: 5rem;
 }
 .plan-section {
   display: flex;
@@ -480,109 +481,4 @@ footer {
 }
 .footer-items span {
   font-weight: 500;
-}
-/******Responsive Design****/
-@media screen and (max-width: 1024px) {
-  main {
-    display: block;
-  }
-  .main-image > img {
-    display: none;
-  }
-  .features-card {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(150px, 1fr));
-    gap: 3rem;
-    margin-top: 4rem;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-content: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  header {
-    padding: 1rem 2rem;
-  }
-  main {
-    display: block;
-  }
-  .main-text > h1 {
-    margin-top: 3rem;
-    font-weight: 700;
-    font-size: 2.75rem;
-  }
-  .main-image > img {
-    display: none;
-  }
-  .features-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 2rem;
-    margin-top: 4rem;
-  }
-  .features-text > p {
-    max-width: 20rem;
-    margin-top: 1rem;
-    font-weight: 300;
-    font-size: 1rem;
-  }
-  .features-text h2 {
-    font-weight: 400;
-    font-size: 1.3rem;
-  }
-  .burger-menu {
-    display: flex;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  .navMenu {
-    display: none;
-  }
-
-  .jackpots-section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    background: rgba(242, 242, 242, 0.749);
-    padding: 1rem 7rem;
-  }
-  .leading-video img {
-    max-width: 25rem;
-    margin-top: 1rem;
-  }
-  .amazing-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    padding: 1rem 4rem;
-    gap: 4rem;
-  }
-  .widget-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .widget img {
-    margin-left: 0;
-  }
-  .Free-Premium {
-    display: block;
-  }
-  .Free {
-    margin-bottom: 2rem;
-  }
-  .policy {
-    text-align: center;
-    padding: 1rem;
-  }
-  .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    justify-content: center;
-    align-content: center;
-  }
 }
